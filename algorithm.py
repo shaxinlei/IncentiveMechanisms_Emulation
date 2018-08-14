@@ -70,6 +70,7 @@ def acution_winner_determination(T, N, W, q, Q, F, t, r, T1, T2, alpha, beta, op
                 pass
             value = abs(W[i])/sum_i
             if value < min_value:
+                min_value = value
                 l = i
         S.append(l)
         N_ = [a for a in N_ if a is not l]  # 缩小N_集合

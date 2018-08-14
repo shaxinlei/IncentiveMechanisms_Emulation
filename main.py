@@ -82,7 +82,7 @@ def run_vary_users(user_range, num_tasks, alpha, beta, open_alpha_and_beta):
         T1 = 0
         T2 = 30
         q_range = [1, 2] 
-        Q_range = [10, 15]
+        Q_range = [10, 13]
         t_range = [20, 40]
         r_range = [0, 7]
         eta_range = [20, 30]
@@ -182,8 +182,8 @@ if __name__ == '__main__':
 
     # 启用alpha beta限制条件
     # fixed alpha and beta
-    fix_alpha = 0.6
-    fix_beta = 0.6
+    fix_alpha = 0.4
+    fix_beta = 0.4
     vary_users_welfares = run_vary_users(user_range, num_tasks, fix_alpha, fix_beta, 1)
 
     # vary_tasks_welfares = run_vary_tasks(task_range, num_users, fix_alpha, fix_beta, 1)
@@ -194,8 +194,8 @@ if __name__ == '__main__':
 
     # # vary alpha and fix beta
     vary_type1 = 'alpha'
-    alpha_list = [0.6, 0.7, 0.9]
-    fix_beta = 0.6
+    alpha_list = [0.4, 0.5, 0.6]
+    fix_beta = 0.4
 
     vary_users_welfares_vary_alpha = []
     vary_tasks_welfares_vary_alpha = []
